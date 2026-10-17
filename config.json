@@ -1,0 +1,38 @@
+{
+  "camera": {
+    "type": "esp32",
+    "esp32_ip": "***********",
+    "stream_url": "http://***********/stream",
+    "flip_180": true,
+    "webcam_index": 0,
+    "description": "ESP32-CAM stream URL and standard ESP32 Sensor/Alarm Hub IP."
+  },
+  "notifications": {
+    "ntfy_push": {
+      "enabled": true,
+      "topic": "elderly_fall_alert_demo",
+      "description": "Free instant phone push notifications. Install 'ntfy' app from Play Store / App Store, subscribe to this topic name."
+    },
+    "telegram": {
+      "enabled": true,
+      "bot_token": "************************************",
+      "chat_id": "**********",
+      "send_snapshot_photo": true,
+      "description": "Free Telegram bot notification with photo snapshot of the fall."
+    },
+    "twilio_sms": {
+      "enabled": true,
+      "account_sid": "A************************",
+      "auth_token": "********************************",
+      "from_number": "************",
+      "to_number": "*************",
+      "description": "Direct cellular SMS to any phone number via Twilio API."
+    },
+    "whatsapp_callmebot": {
+      "enabled": false,
+      "phone_number": "+919876543210",
+      "api_key": "YOUR_CALLMEBOT_API_KEY",
+      "description": "Free automated WhatsApp messages via CallMeBot."
+    }
+  }
+}
